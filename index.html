@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair Product Page</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+
+
+
+</head>
+
+<body id="box">
+
+    <div class="box">
+        <div>
+            <img  src="./images/chair gray.webp" alt="" class="pepsi">
+        </div>
+
+        <div class="box2">
+            <h4>MODERN CHAIR</h4>
+            <h1>Sella Gastro</h1>
+            <h2>$174 <span>$237</span></h2>
+            <h6>Details<span>Description</span></h6>
+            <div class="details">
+                <div>
+                    <h2>76cm</h2>
+                    <p>Lenght</p>
+                </div>
+                <div>
+                    <h2>68cm</h2>
+                    <p>Width</p>
+                </div>
+                <div>
+                    <h2>87cm</h2>
+                    <p>Height</p>
+                </div>
+                <div>
+                    <h2>10kg</h2>
+                    <p>Weight</p>
+                </div>
+            </div>
+
+            <h3>Choose upholstery:</h3>
+
+            <div class="imgflex">
+                <div  class="imgsize"><a href="#"><img src="./images/chair bg gray.jpg" alt="" onclick="imgSlider('images/chair gray.webp');changeBgcolor('#8A8484')"></a></div>
+                <div  class="imgsize"><a href="#"><img src="./images/chair bg red.jpg" alt="" onclick="imgSlider('images/chair red.webp');changeBgcolor('#B66565')"></a></div>
+                <div class="imgsize"><a href="#"><img src="./images/chair bg blue dot.jpg" alt="" onclick="imgSlider('images/chair blue dot.webp');changeBgcolor('#808D94')"></a></div>
+                <div class="imgsize"><a href="#"><img src="./images/chair bg light red.jpg" alt="" onclick="imgSlider('images/chair light red.webp');changeBgcolor('#B6B08D')"></a></div>
+                <div class="imgsize"><a href="#"><img src="./images/chair bg black.jpg" alt="" onclick="imgSlider('images/chair black.webp');changeBgcolor('#605E52')"></a></div>
+                <div class="imgsize"><a href="#"><img src="./images/chair bg blue.jpg" alt="" onclick="imgSlider('images/chair blue.webp');changeBgcolor('#7A8DB2')"></a></div>
+            </div>
+
+            <button>Add To Cart</button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+
+         function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+
+
+
+        function changeBgcolor(color){
+            const box = document.querySelector('.box');
+            box.style.background = color;
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>
